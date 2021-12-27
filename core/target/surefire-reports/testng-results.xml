@@ -2,12 +2,12 @@
 <testng-results total="41" passed="41" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-09T14:44:42Z" name="Command line suite" finished-at="2021-11-09T14:44:43Z" duration-ms="948">
+  <suite started-at="2021-12-16T00:43:04Z" name="Command line suite" finished-at="2021-12-16T00:43:04Z" duration-ms="659">
     <groups>
     </groups>
-    <test started-at="2021-11-09T14:44:42Z" name="Command line test" finished-at="2021-11-09T14:44:43Z" duration-ms="948">
+    <test started-at="2021-12-16T00:43:04Z" name="Command line test" finished-at="2021-12-16T00:43:04Z" duration-ms="659">
       <class name="site.ycsb.workloads.TestTimeSeriesWorkload">
-        <test-method signature="badTimeUnit()" started-at="2021-11-09T14:44:43Z" name="badTimeUnit" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="badTimeUnit()" started-at="2021-12-16T00:43:04Z" name="badTimeUnit" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
           <exception class="site.ycsb.WorkloadException">
             <message>
               <![CDATA[Unknown time unit type]]>
@@ -61,7 +61,7 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="failedToInitThread()" started-at="2021-11-09T14:44:43Z" name="failedToInitThread" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="failedToInitThread()" started-at="2021-12-16T00:43:04Z" name="failedToInitThread" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[Missing thread state.]]>
@@ -109,9 +109,9 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="insertOneKeyOneTagCardinalityOne()" started-at="2021-11-09T14:44:43Z" name="insertOneKeyOneTagCardinalityOne" finished-at="2021-11-09T14:44:43Z" duration-ms="2" status="PASS">
+        <test-method signature="insertOneKeyOneTagCardinalityOne()" started-at="2021-12-16T00:43:04Z" name="insertOneKeyOneTagCardinalityOne" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="failedToInitWorkloadBeforeThreadInit()" started-at="2021-11-09T14:44:43Z" name="failedToInitWorkloadBeforeThreadInit" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="failedToInitWorkloadBeforeThreadInit()" started-at="2021-12-16T00:43:04Z" name="failedToInitWorkloadBeforeThreadInit" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
           <exception class="site.ycsb.WorkloadException">
             <message>
               <![CDATA[Workload has not been initialized.]]>
@@ -159,29 +159,29 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="insertOneKeyTwoTagsLowCardinality()" started-at="2021-11-09T14:44:43Z" name="insertOneKeyTwoTagsLowCardinality" finished-at="2021-11-09T14:44:43Z" duration-ms="2" status="PASS">
+        <test-method signature="insertOneKeyTwoTagsLowCardinality()" started-at="2021-12-16T00:43:04Z" name="insertOneKeyTwoTagsLowCardinality" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertThreeKeysTwoThreads()" started-at="2021-11-09T14:44:43Z" name="insertThreeKeysTwoThreads" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="insertThreeKeysTwoThreads()" started-at="2021-12-16T00:43:04Z" name="insertThreeKeysTwoThreads" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertTwoKeysTwoTagsLowCardinality()" started-at="2021-11-09T14:44:43Z" name="insertTwoKeysTwoTagsLowCardinality" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="insertTwoKeysTwoTagsLowCardinality()" started-at="2021-12-16T00:43:04Z" name="insertTwoKeysTwoTagsLowCardinality" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="insertTwoKeysTwoThreads()" started-at="2021-11-09T14:44:43Z" name="insertTwoKeysTwoThreads" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="insertTwoKeysTwoThreads()" started-at="2021-12-16T00:43:04Z" name="insertTwoKeysTwoThreads" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="insertWithValidation()" started-at="2021-11-09T14:44:43Z" name="insertWithValidation" finished-at="2021-11-09T14:44:43Z" duration-ms="2" status="PASS">
+        <test-method signature="insertWithValidation()" started-at="2021-12-16T00:43:04Z" name="insertWithValidation" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="read()" started-at="2021-11-09T14:44:43Z" name="read" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="read()" started-at="2021-12-16T00:43:04Z" name="read" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="twoThreads()" started-at="2021-11-09T14:44:43Z" name="twoThreads" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="twoThreads()" started-at="2021-12-16T00:43:04Z" name="twoThreads" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="validateSettingsDataIntegrity()" started-at="2021-11-09T14:44:43Z" name="validateSettingsDataIntegrity" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="validateSettingsDataIntegrity()" started-at="2021-12-16T00:43:04Z" name="validateSettingsDataIntegrity" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="verifyRow()" started-at="2021-11-09T14:44:43Z" name="verifyRow" finished-at="2021-11-09T14:44:43Z" duration-ms="8" status="PASS">
+        <test-method signature="verifyRow()" started-at="2021-12-16T00:43:04Z" name="verifyRow" finished-at="2021-12-16T00:43:04Z" duration-ms="6" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.generator.TestRandomDiscreteTimestampGenerator">
-        <test-method signature="systemTime()" started-at="2021-11-09T14:44:43Z" name="systemTime" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="systemTime()" started-at="2021-12-16T00:43:04Z" name="systemTime" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="tooLarge()" started-at="2021-11-09T14:44:43Z" name="tooLarge" finished-at="2021-11-09T14:44:43Z" duration-ms="36" status="PASS">
+        <test-method signature="tooLarge()" started-at="2021-12-16T00:43:04Z" name="tooLarge" finished-at="2021-12-16T00:43:04Z" duration-ms="29" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Too many intervals for the in-memory array. The limit is 16777216.]]>
@@ -230,35 +230,37 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="withStartTime()" started-at="2021-11-09T14:44:43Z" name="withStartTime" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="withStartTime()" started-at="2021-12-16T00:43:04Z" name="withStartTime" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.generator.AcknowledgedCounterGeneratorTest">
-        <test-method signature="testIncrementPastIntegerMaxValue()" started-at="2021-11-09T14:44:43Z" name="testIncrementPastIntegerMaxValue" finished-at="2021-11-09T14:44:43Z" duration-ms="582" status="PASS">
+        <test-method signature="testIncrementPastIntegerMaxValue()" started-at="2021-12-16T00:43:04Z" name="testIncrementPastIntegerMaxValue" finished-at="2021-12-16T00:43:04Z" duration-ms="435" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.generator.TestUnixEpochTimestampGenerator">
-        <test-method signature="defaultCtor()" started-at="2021-11-09T14:44:43Z" name="defaultCtor" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="ctorWithIntervalAndUnits()" started-at="2021-12-16T00:43:04Z" name="ctorWithIntervalAndUnits" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="ctorWithIntervalAndUnitsAndStart()" started-at="2021-11-09T14:44:43Z" name="ctorWithIntervalAndUnitsAndStart" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="ctorWithIntervalAndUnitsAndStart()" started-at="2021-12-16T00:43:04Z" name="ctorWithIntervalAndUnitsAndStart" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="ctorWithIntervalAndUnits()" started-at="2021-11-09T14:44:43Z" name="ctorWithIntervalAndUnits" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="defaultCtor()" started-at="2021-12-16T00:43:04Z" name="defaultCtor" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="variousIntervalsAndUnits()" started-at="2021-11-09T14:44:43Z" name="variousIntervalsAndUnits" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="variousIntervalsAndUnits()" started-at="2021-12-16T00:43:04Z" name="variousIntervalsAndUnits" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.measurements.exporter.TestMeasurementsExporter">
-        <test-method signature="testJSONArrayMeasurementsExporter()" started-at="2021-11-09T14:44:43Z" name="testJSONArrayMeasurementsExporter" finished-at="2021-11-09T14:44:43Z" duration-ms="196" status="PASS">
+        <test-method signature="testJSONArrayMeasurementsExporter()" started-at="2021-12-16T00:43:04Z" name="testJSONArrayMeasurementsExporter" finished-at="2021-12-16T00:43:04Z" duration-ms="121" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.TestNumericByteIterator">
-        <test-method signature="testDouble()" started-at="2021-11-09T14:44:42Z" name="testDouble" finished-at="2021-11-09T14:44:42Z" duration-ms="1" status="PASS">
+        <test-method signature="testDouble()" started-at="2021-12-16T00:43:04Z" name="testDouble" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="testLong()" started-at="2021-11-09T14:44:42Z" name="testLong" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
+        <test-method signature="testLong()" started-at="2021-12-16T00:43:04Z" name="testLong" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.TestUtils">
-        <test-method signature="bytesToDoubleTooShort()" started-at="2021-11-09T14:44:42Z" name="bytesToDoubleTooShort" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
+        <test-method signature="bytesToFromDouble()" started-at="2021-12-16T00:43:04Z" name="bytesToFromDouble" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
+        </test-method>
+        <test-method signature="bytesToDoubleTooShort()" started-at="2021-12-16T00:43:04Z" name="bytesToDoubleTooShort" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Byte array must be 8 bytes wide.]]>
@@ -306,9 +308,7 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="bytesToFromDouble()" started-at="2021-11-09T14:44:42Z" name="bytesToFromDouble" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
-        </test-method>
-        <test-method signature="bytesToLongTooShort()" started-at="2021-11-09T14:44:42Z" name="bytesToLongTooShort" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
+        <test-method signature="bytesToLongTooShort()" started-at="2021-12-16T00:43:04Z" name="bytesToLongTooShort" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
           <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
               <![CDATA[Index 7 out of bounds for length 7]]>
@@ -356,9 +356,9 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="bytesToFromLong()" started-at="2021-11-09T14:44:42Z" name="bytesToFromLong" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
+        <test-method signature="jvmUtils()" started-at="2021-12-16T00:43:04Z" name="jvmUtils" finished-at="2021-12-16T00:43:04Z" duration-ms="34" status="PASS">
         </test-method>
-        <test-method signature="bytesToLongNull()" started-at="2021-11-09T14:44:42Z" name="bytesToLongNull" finished-at="2021-11-09T14:44:42Z" duration-ms="0" status="PASS">
+        <test-method signature="bytesToLongNull()" started-at="2021-12-16T00:43:04Z" name="bytesToLongNull" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -403,13 +403,13 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method signature="jvmUtils()" started-at="2021-11-09T14:44:42Z" name="jvmUtils" finished-at="2021-11-09T14:44:43Z" duration-ms="77" status="PASS">
+        <test-method signature="bytesToFromLong()" started-at="2021-12-16T00:43:04Z" name="bytesToFromLong" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.workloads.TestCoreWorkload">
-        <test-method signature="createOperationChooser()" started-at="2021-11-09T14:44:43Z" name="createOperationChooser" finished-at="2021-11-09T14:44:43Z" duration-ms="2" status="PASS">
+        <test-method signature="createOperationChooser()" started-at="2021-12-16T00:43:04Z" name="createOperationChooser" finished-at="2021-12-16T00:43:04Z" duration-ms="2" status="PASS">
         </test-method>
-        <test-method signature="createOperationChooserNullProperties()" started-at="2021-11-09T14:44:43Z" name="createOperationChooserNullProperties" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="createOperationChooserNullProperties()" started-at="2021-12-16T00:43:04Z" name="createOperationChooserNullProperties" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Properties object cannot be null]]>
@@ -459,29 +459,29 @@ Caused by: java.lang.IllegalArgumentException: No enum constant java.util.concur
         </test-method>
       </class>
       <class name="site.ycsb.generator.TestZipfianGenerator">
-        <test-method signature="testMinAndMaxParameter()" started-at="2021-11-09T14:44:43Z" name="testMinAndMaxParameter" finished-at="2021-11-09T14:44:43Z" duration-ms="4" status="PASS">
+        <test-method signature="testMinAndMaxParameter()" started-at="2021-12-16T00:43:04Z" name="testMinAndMaxParameter" finished-at="2021-12-16T00:43:04Z" duration-ms="3" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.TestStatus">
-        <test-method signature="testAcceptableStatus()" started-at="2021-11-09T14:44:42Z" name="testAcceptableStatus" finished-at="2021-11-09T14:44:42Z" duration-ms="2" status="PASS">
+        <test-method signature="testAcceptableStatus()" started-at="2021-12-16T00:43:04Z" name="testAcceptableStatus" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.generator.TestIncrementingPrintableStringGenerator">
-        <test-method signature="invalidCharacterSets()" started-at="2021-11-09T14:44:43Z" name="invalidCharacterSets" finished-at="2021-11-09T14:44:43Z" duration-ms="1" status="PASS">
+        <test-method signature="invalidCharacterSets()" started-at="2021-12-16T00:43:04Z" name="invalidCharacterSets" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="invalidLengths()" started-at="2021-11-09T14:44:43Z" name="invalidLengths" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="invalidLengths()" started-at="2021-12-16T00:43:04Z" name="invalidLengths" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="rolloverOK()" started-at="2021-11-09T14:44:43Z" name="rolloverOK" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="rolloverOK()" started-at="2021-12-16T00:43:04Z" name="rolloverOK" finished-at="2021-12-16T00:43:04Z" duration-ms="1" status="PASS">
         </test-method>
-        <test-method signature="rolloverException()" started-at="2021-11-09T14:44:43Z" name="rolloverException" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="rolloverException()" started-at="2021-12-16T00:43:04Z" name="rolloverException" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="rolloverOneCharacterException()" started-at="2021-11-09T14:44:43Z" name="rolloverOneCharacterException" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="rolloverOneCharacterException()" started-at="2021-12-16T00:43:04Z" name="rolloverOneCharacterException" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
-        <test-method signature="rolloverOneCharacterOK()" started-at="2021-11-09T14:44:43Z" name="rolloverOneCharacterOK" finished-at="2021-11-09T14:44:43Z" duration-ms="0" status="PASS">
+        <test-method signature="rolloverOneCharacterOK()" started-at="2021-12-16T00:43:04Z" name="rolloverOneCharacterOK" finished-at="2021-12-16T00:43:04Z" duration-ms="0" status="PASS">
         </test-method>
       </class>
       <class name="site.ycsb.TestByteIterator">
-        <test-method signature="testRandomByteIterator()" started-at="2021-11-09T14:44:42Z" name="testRandomByteIterator" finished-at="2021-11-09T14:44:42Z" duration-ms="10" status="PASS">
+        <test-method signature="testRandomByteIterator()" started-at="2021-12-16T00:43:04Z" name="testRandomByteIterator" finished-at="2021-12-16T00:43:04Z" duration-ms="5" status="PASS">
         </test-method>
       </class>
     </test>

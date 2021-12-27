@@ -182,7 +182,7 @@ public class StatusThread extends Thread {
     msg.append(Measurements.getMeasurements().getSummary());
 
     try {
-      String fileName = "/home/mldb01/hdd_folder/db_log/ycsb-measurement.txt";
+      String fileName = "/home/jwpark/hdd_folder/db_log/ycsb-measurement.txt";
       PrintWriter pw = new PrintWriter(new FileWriter(fileName, true));
       msg.append("\n");
       pw.write(msg.toString());
@@ -202,7 +202,7 @@ public class StatusThread extends Thread {
     if (standardstatus) {
       System.out.println(msg);
       try {
-        String fileName = "/home/mldb01/hdd_folder/ycsb-measurement.txt";
+        String fileName = "/home/jwpark/hdd_folder/ycsb-measurement.txt";
         PrintWriter pw = new PrintWriter(new FileWriter(fileName, true));
         msg.append("\n");
         pw.write(msg.toString());

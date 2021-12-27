@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="41" failures="0" name="TestSuite" time="0.934" errors="0" skipped="0">
+<testsuite tests="41" failures="0" name="TestSuite" time="0.65" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.18.04"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/mldb01/hdd_folder/YCSB"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/jwpark/hdd_folder/YCSB"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,9 +14,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/mldb01/hdd_folder/YCSB"/>
+    <property name="user.dir" value="/home/jwpark/hdd_folder/YCSB"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.18.04"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -32,10 +32,10 @@
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.4.0-81-generic"/>
+    <property name="os.version" value="5.3.18-vanilla"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/root"/>
-    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="user.timezone" value="America/New_York"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="11"/>
@@ -48,7 +48,7 @@
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.11"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="java.vendor" value="Ubuntu"/>
@@ -60,33 +60,33 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="site.ycsb.TestByteIterator" name="testRandomByteIterator" time="0.01"/>
+  <testcase classname="site.ycsb.TestByteIterator" name="testRandomByteIterator" time="0.006"/>
   <testcase classname="site.ycsb.TestNumericByteIterator" name="testDouble" time="0"/>
   <testcase classname="site.ycsb.TestNumericByteIterator" name="testLong" time="0"/>
   <testcase classname="site.ycsb.TestStatus" name="testAcceptableStatus" time="0.001"/>
   <testcase classname="site.ycsb.TestUtils" name="bytesToDoubleTooShort" time="0"/>
-  <testcase classname="site.ycsb.TestUtils" name="bytesToFromDouble" time="0"/>
+  <testcase classname="site.ycsb.TestUtils" name="bytesToFromDouble" time="0.001"/>
   <testcase classname="site.ycsb.TestUtils" name="bytesToFromLong" time="0"/>
   <testcase classname="site.ycsb.TestUtils" name="bytesToLongNull" time="0"/>
-  <testcase classname="site.ycsb.TestUtils" name="bytesToLongTooShort" time="0.001"/>
-  <testcase classname="site.ycsb.TestUtils" name="jvmUtils" time="0.077"/>
-  <testcase classname="site.ycsb.generator.AcknowledgedCounterGeneratorTest" name="testIncrementPastIntegerMaxValue" time="0.582"/>
-  <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidCharacterSets" time="0.001"/>
-  <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidLengths" time="0.001"/>
+  <testcase classname="site.ycsb.TestUtils" name="bytesToLongTooShort" time="0"/>
+  <testcase classname="site.ycsb.TestUtils" name="jvmUtils" time="0.034"/>
+  <testcase classname="site.ycsb.generator.AcknowledgedCounterGeneratorTest" name="testIncrementPastIntegerMaxValue" time="0.435"/>
+  <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidCharacterSets" time="0"/>
+  <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="invalidLengths" time="0"/>
   <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverException" time="0"/>
   <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOK" time="0"/>
   <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOneCharacterException" time="0"/>
   <testcase classname="site.ycsb.generator.TestIncrementingPrintableStringGenerator" name="rolloverOneCharacterOK" time="0"/>
   <testcase classname="site.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="systemTime" time="0.001"/>
-  <testcase classname="site.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="tooLarge" time="0.036"/>
-  <testcase classname="site.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="withStartTime" time="0.001"/>
+  <testcase classname="site.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="tooLarge" time="0.029"/>
+  <testcase classname="site.ycsb.generator.TestRandomDiscreteTimestampGenerator" name="withStartTime" time="0"/>
   <testcase classname="site.ycsb.generator.TestUnixEpochTimestampGenerator" name="ctorWithIntervalAndUnits" time="0"/>
   <testcase classname="site.ycsb.generator.TestUnixEpochTimestampGenerator" name="ctorWithIntervalAndUnitsAndStart" time="0"/>
-  <testcase classname="site.ycsb.generator.TestUnixEpochTimestampGenerator" name="defaultCtor" time="0.001"/>
+  <testcase classname="site.ycsb.generator.TestUnixEpochTimestampGenerator" name="defaultCtor" time="0"/>
   <testcase classname="site.ycsb.generator.TestUnixEpochTimestampGenerator" name="variousIntervalsAndUnits" time="0"/>
-  <testcase classname="site.ycsb.generator.TestZipfianGenerator" name="testMinAndMaxParameter" time="0.004"/>
-  <testcase classname="site.ycsb.measurements.exporter.TestMeasurementsExporter" name="testJSONArrayMeasurementsExporter" time="0.195"/>
-  <testcase classname="site.ycsb.workloads.TestCoreWorkload" name="createOperationChooser" time="0.003"/>
+  <testcase classname="site.ycsb.generator.TestZipfianGenerator" name="testMinAndMaxParameter" time="0.003"/>
+  <testcase classname="site.ycsb.measurements.exporter.TestMeasurementsExporter" name="testJSONArrayMeasurementsExporter" time="0.121"/>
+  <testcase classname="site.ycsb.workloads.TestCoreWorkload" name="createOperationChooser" time="0.002"/>
   <testcase classname="site.ycsb.workloads.TestCoreWorkload" name="createOperationChooserNullProperties" time="0"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="badTimeUnit" time="0.001"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="failedToInitThread" time="0.001"/>
@@ -96,9 +96,9 @@
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="insertThreeKeysTwoThreads" time="0.001"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoTagsLowCardinality" time="0"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="insertTwoKeysTwoThreads" time="0.001"/>
-  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="insertWithValidation" time="0.002"/>
+  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="insertWithValidation" time="0.001"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="read" time="0.001"/>
-  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="twoThreads" time="0.001"/>
+  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="twoThreads" time="0"/>
   <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="validateSettingsDataIntegrity" time="0.001"/>
-  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="verifyRow" time="0.008"/>
+  <testcase classname="site.ycsb.workloads.TestTimeSeriesWorkload" name="verifyRow" time="0.007"/>
 </testsuite>

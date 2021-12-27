@@ -135,13 +135,15 @@ public class RocksDBClient extends DB {
     final List<ColumnFamilyOptions> cfOptionss = new ArrayList<>();
     final List<ColumnFamilyDescriptor> cfDescriptors = new ArrayList<>();
     final BlockBasedTableConfig blockBasedTableConfig = new BlockBasedTableConfig();
-    blockBasedTableConfig.setCacheIndexAndFilterBlocks(true);
     long blockCacheSize = 1024*1024*1024;
-    blockCacheSize = blockCacheSize;
-    blockBasedTableConfig.setBlockCacheSize(blockCacheSize);
+    blockCacheSize = 1*blockCacheSize;
+    Cache customCache = new LRUCache(blockCacheSize, 6, false, 1.0);
+    blockBasedTableConfig.setCacheIndexAndFilterBlocks(true);
+    blockBasedTableConfig.setBlockCache(customCache);
     final Statistics stats = new Statistics();
-    //blockBasedTableConfig.setBlockCacheCompressedSize(1024*1024*1024);
-    //blockBasedTableConfig.setPinL0FilterAndIndexBlocksInCache(true);
+    blockBasedTableConfig.setPinL0FilterAndIndexBlocksInCache(true);
+    blockBasedTableConfig.setCacheIndexAndFilterBlocksWithHighPriority(true);
+    blockBasedTableConfig.setBlockSize(7168);
     List<CompressionType> compressionTypeList = new ArrayList<>();
     int numLevel = 6;
     for (int i = 0; i < numLevel; i++){
@@ -181,7 +183,7 @@ public class RocksDBClient extends DB {
           .setNumLevels(numLevel)
           //.setMaxOpenFiles(5)
           .setMaxBackgroundCompactions(6)
-          .setMaxBackgroundFlushes(6)
+          .setMaxBackgroundFlushes(2)
           //.setMaxWriteBufferNumber(8)
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
@@ -201,7 +203,7 @@ public class RocksDBClient extends DB {
           .setInfoLogLevel(InfoLogLevel.INFO_LEVEL)
           //.setMaxOpenFiles(5)
           .setMaxBackgroundCompactions(6)
-          .setMaxBackgroundFlushes(6)
+          .setMaxBackgroundFlushes(2)
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
           .setUseDirectIoForFlushAndCompaction(true)
