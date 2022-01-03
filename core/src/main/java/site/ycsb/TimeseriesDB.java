@@ -71,7 +71,7 @@ public abstract class TimeseriesDB extends DB {
    * Called once per DB instance; there is one DB instance per client thread.
    */
   @Override
-  public void init() throws DBException {
+  public void init(final int threadcount) throws DBException {
     // taken from BasicTSDB
     timestampKey = getProperties().getProperty(
         TimeSeriesWorkload.TIMESTAMP_KEY_PROPERTY,

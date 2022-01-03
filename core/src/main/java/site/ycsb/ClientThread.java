@@ -88,7 +88,7 @@ public class ClientThread implements Runnable {
   @Override
   public void run() {
     try {
-      db.init();
+      db.init(threadcount);
     } catch (DBException e) {
       e.printStackTrace();
       e.printStackTrace(System.out);

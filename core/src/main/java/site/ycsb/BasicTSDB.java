@@ -43,8 +43,8 @@ public class BasicTSDB extends BasicDB {
   private long lastTimestamp;
   
   @Override
-  public void init() {
-    super.init();
+  public void init(final int threadcount) {
+    super.init(threadcount);
     
     synchronized (MUTEX) {
       if (timestamps == null) {

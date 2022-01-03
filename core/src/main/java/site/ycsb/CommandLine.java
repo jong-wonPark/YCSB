@@ -96,7 +96,7 @@ public final class CommandLine {
 
     db.setProperties(props);
     try {
-      db.init();
+      db.init(1);
     } catch (DBException e) {
       e.printStackTrace();
       System.exit(0);

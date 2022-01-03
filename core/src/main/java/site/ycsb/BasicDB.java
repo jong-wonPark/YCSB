@@ -80,7 +80,7 @@ public class BasicDB extends DB {
    * Initialize any state for this DB.
    * Called once per DB instance; there is one DB instance per client thread.
    */
-  public void init() {
+  public void init(final int threadCount) {
     verbose = Boolean.parseBoolean(getProperties().getProperty(VERBOSE, VERBOSE_DEFAULT));
     todelay = Integer.parseInt(getProperties().getProperty(SIMULATE_DELAY, SIMULATE_DELAY_DEFAULT));
     randomizedelay = Boolean.parseBoolean(getProperties().getProperty(RANDOMIZE_DELAY, RANDOMIZE_DELAY_DEFAULT));

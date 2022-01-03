@@ -85,9 +85,9 @@ public class DBWrapper extends DB {
    * Initialize any state for this DB.
    * Called once per DB instance; there is one DB instance per client thread.
    */
-  public void init() throws DBException {
+  public void init(final int threadcount) throws DBException {
     try (final TraceScope span = tracer.newScope(scopeStringInit)) {
-      db.init();
+      db.init(threadcount);
 
       this.reportLatencyForEachError = Boolean.parseBoolean(getProperties().
           getProperty(REPORT_LATENCY_FOR_EACH_ERROR_PROPERTY,

@@ -60,7 +60,7 @@ public class RocksDBClient extends DB {
   private static final ConcurrentMap<String, Lock> COLUMN_FAMILY_LOCKS = new ConcurrentHashMap<>();
 
   @Override
-  public void init() throws DBException {
+  public void init(final int threadcount) throws DBException {
     synchronized(RocksDBClient.class) {
       if(rocksDb == null) {
         rocksDbDir = Paths.get(getProperties().getProperty(PROPERTY_ROCKSDB_DIR));
@@ -76,7 +76,7 @@ public class RocksDBClient extends DB {
           if (optionsFile != null) {
             rocksDb = initRocksDBWithOptionsFile();
           } else {
-            rocksDb = initRocksDB();
+            rocksDb = initRocksDB(threadcount);
           }
         } catch (final IOException | RocksDBException e) {
           throw new DBException(e);
@@ -127,7 +127,7 @@ public class RocksDBClient extends DB {
    *
    * @return The initialized and open RocksDB instance.
    */
-  private RocksDB initRocksDB() throws IOException, RocksDBException {
+  private RocksDB initRocksDB(final int threadcount) throws IOException, RocksDBException {
     if(!Files.exists(rocksDbDir)) {
       Files.createDirectories(rocksDbDir);
     }
@@ -136,7 +136,7 @@ public class RocksDBClient extends DB {
     final List<ColumnFamilyDescriptor> cfDescriptors = new ArrayList<>();
     final BlockBasedTableConfig blockBasedTableConfig = new BlockBasedTableConfig();
     long blockCacheSize = 1024*1024*1024;
-    blockCacheSize = 1*blockCacheSize;
+    blockCacheSize = 3*blockCacheSize;
     Cache customCache = new LRUCache(blockCacheSize, 6, false, 1.0);
     blockBasedTableConfig.setCacheIndexAndFilterBlocks(true);
     blockBasedTableConfig.setBlockCache(customCache);
@@ -188,6 +188,7 @@ public class RocksDBClient extends DB {
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
           .setUseDirectIoForFlushAndCompaction(true)
+          //.setMaxClientThreads(threadcount)
           .setStatistics(stats)
           //.setLevel0FileNumCompactionTrigger(4)
           .setCompressionPerLevel(compressionTypeList);
@@ -207,6 +208,7 @@ public class RocksDBClient extends DB {
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
           .setUseDirectIoForFlushAndCompaction(true)
+          //.setMaxClientThreads(threadcount)
           .setStatistics(stats)
           .setEnablePipelinedWrite(true);
       dbOptions = options;

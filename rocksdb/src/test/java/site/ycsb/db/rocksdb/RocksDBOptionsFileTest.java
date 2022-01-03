@@ -49,7 +49,7 @@ public class RocksDBOptionsFileTest {
     properties.setProperty(RocksDBClient.PROPERTY_ROCKSDB_OPTIONS_FILE, optionsPath);
     instance.setProperties(properties);
 
-    instance.init();
+    instance.init(1);
     instance.cleanup();
   }
 
