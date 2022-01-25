@@ -188,7 +188,7 @@ public class RocksDBClient extends DB {
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
           .setUseDirectIoForFlushAndCompaction(true)
-          //.setMaxClientThreads(threadcount)
+          .setMaxFileOpeningThreads(threadcount)
           .setStatistics(stats)
           //.setLevel0FileNumCompactionTrigger(4)
           .setCompressionPerLevel(compressionTypeList);
@@ -208,7 +208,7 @@ public class RocksDBClient extends DB {
           .setMaxSubcompactions(4)
           .setUseDirectReads(true)
           .setUseDirectIoForFlushAndCompaction(true)
-          //.setMaxClientThreads(threadcount)
+          .setMaxFileOpeningThreads(threadcount)
           .setStatistics(stats)
           .setEnablePipelinedWrite(true);
       dbOptions = options;
