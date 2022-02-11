@@ -136,14 +136,16 @@ public class RocksDBClient extends DB {
     final List<ColumnFamilyDescriptor> cfDescriptors = new ArrayList<>();
     final BlockBasedTableConfig blockBasedTableConfig = new BlockBasedTableConfig();
     long blockCacheSize = 1024*1024*1024;
-    blockCacheSize = 3*blockCacheSize;
+    blockCacheSize = 6*blockCacheSize;
     Cache customCache = new LRUCache(blockCacheSize, 6, false, 1.0);
+    final Filter bloomFilter = new BloomFilter();
     blockBasedTableConfig.setCacheIndexAndFilterBlocks(true);
     blockBasedTableConfig.setBlockCache(customCache);
+    blockBasedTableConfig.setFilterPolicy(bloomFilter);
     final Statistics stats = new Statistics();
     blockBasedTableConfig.setPinL0FilterAndIndexBlocksInCache(true);
     blockBasedTableConfig.setCacheIndexAndFilterBlocksWithHighPriority(true);
-    blockBasedTableConfig.setBlockSize(7168);
+    blockBasedTableConfig.setBlockSize(31744);
     List<CompressionType> compressionTypeList = new ArrayList<>();
     int numLevel = 6;
     for (int i = 0; i < numLevel; i++){
@@ -182,7 +184,7 @@ public class RocksDBClient extends DB {
           .setTableFormatConfig(blockBasedTableConfig)
           .setNumLevels(numLevel)
           //.setMaxOpenFiles(5)
-          .setMaxBackgroundCompactions(6)
+          .setMaxBackgroundCompactions(32)
           .setMaxBackgroundFlushes(2)
           //.setMaxWriteBufferNumber(8)
           .setMaxSubcompactions(4)
