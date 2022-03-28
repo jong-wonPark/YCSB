@@ -27,12 +27,13 @@
 # workload here (which we believe is more typical of how people build systems.)
 
 recordcount=300000000
-operationcount=100000000
-#operationcount=10000000
-#threadcount=16
+operationcount=300000000
+#operationcount=30000
 workload=site.ycsb.workloads.CoreWorkload
 
+fieldcount=10
 readallfields=true
+#dataintegrity=true
 
 readproportion=0.95
 updateproportion=0
@@ -40,4 +41,3 @@ scanproportion=0
 insertproportion=0.05
 
 requestdistribution=latest
-

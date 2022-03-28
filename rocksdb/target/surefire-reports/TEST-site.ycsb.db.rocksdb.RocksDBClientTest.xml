@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.4.0-96-generic"/>
+    <property name="os.version" value="5.4.0-105-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/root"/>
     <property name="user.timezone" value="Etc/UTC"/>
@@ -61,8 +61,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertAndDelete" time="0.082"/>
+  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertAndDelete" time="0.084"/>
   <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertAndRead" time="0.011"/>
-  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertAndScan" time="0.012"/>
-  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertUpdateAndRead" time="0.011"/>
+  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertAndScan" time="0.011"/>
+  <testcase classname="site.ycsb.db.rocksdb.RocksDBClientTest" name="insertUpdateAndRead" time="0.01"/>
 </testsuite>

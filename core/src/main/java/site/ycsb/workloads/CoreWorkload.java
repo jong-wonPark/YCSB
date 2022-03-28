@@ -375,6 +375,7 @@ public class CoreWorkload extends Workload {
     if (!orderedinserts) {
       keynum = Utils.hash(keynum);
     }
+    //System.out.printf("keynum:%d", keynum);
     String value = Long.toString(keynum);
     int fill = zeropadding - value.length();
     String prekey = "user";
